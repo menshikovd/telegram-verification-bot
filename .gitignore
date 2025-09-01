@@ -26,6 +26,7 @@ go.work
 
 # Secrets (ВАЖНО!)
 credentials.json
+configs/config.json
 token.txt
 
 # OS
