@@ -3,7 +3,7 @@ services:
 - name: telegram-bot
   source_dir: /
   github:
-    repo: your-username/telegram-verification-bot
+    repo: menshikovd/telegram-verification-bot
     branch: main
     deploy_on_push: true
   run_command: ./bot
@@ -26,5 +26,5 @@ services:
   source:
     type: git
     spec:
-      repo: your-username/telegram-verification-bot
+      repo: menshikovd/telegram-verification-bot
       branch: main
