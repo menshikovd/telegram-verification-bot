@@ -1,0 +1,30 @@
+name: telegram-verification-bot
+services:
+- name: telegram-bot
+  source_dir: /
+  github:
+    repo: your-username/telegram-verification-bot
+    branch: main
+    deploy_on_push: true
+  run_command: ./bot
+  environment_slug: go
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  envs:
+  - key: TELEGRAM_TOKEN
+    scope: RUN_TIME
+    type: SECRET
+  - key: ADMIN_ID
+    scope: RUN_TIME
+    type: SECRET
+  - key: SPREADSHEET_ID
+    scope: RUN_TIME
+    type: SECRET
+  - key: CREDENTIALS_PATH
+    scope: RUN_TIME
+    value: /app/credentials.json
+  source:
+    type: git
+    spec:
+      repo: your-username/telegram-verification-bot
+      branch: main

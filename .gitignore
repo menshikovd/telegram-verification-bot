@@ -1,0 +1,36 @@
+# Binaries
+/bot
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Go workspace file
+go.work
+
+# IDE
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Secrets (ВАЖНО!)
+credentials.json
+token.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

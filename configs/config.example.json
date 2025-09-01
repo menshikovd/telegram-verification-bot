@@ -1,0 +1,6 @@
+{
+  "telegram_token": "YOUR_BOT_TOKEN_HERE",
+  "admin_id": 123456789,
+  "spreadsheet_id": "YOUR_SPREADSHEET_ID_HERE", 
+  "credentials_path": "./configs/credentials.json"
+}
